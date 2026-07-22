@@ -40,6 +40,7 @@
     casks = [
       "wezterm"
       "claude-code"
+      "tailscale-app"
     ];
   };
 }
