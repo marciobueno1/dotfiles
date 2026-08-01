@@ -25,6 +25,8 @@
     dock.autohide = true;
     finder.FXPreferredViewStyle = "Nlsv";  # list view by default
     finder.CreateDesktop = false;          # clean desktop
+    finder.ShowStatusBar = true;
+    finder.ShowPathbar = true;
     trackpad.Clicking = true;              # tap to click
   };
   nix-homebrew = {
