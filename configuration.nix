@@ -41,6 +41,9 @@
       "wezterm"
       "claude-code"
       "tailscale-app"
+      "antigravity-cli"
+      "antigravity-ide"
+      "visual-studio-code"
     ];
   };
 }
