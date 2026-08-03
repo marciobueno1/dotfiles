@@ -23,6 +23,7 @@
       AppleShowAllExtensions = true;
     };
     ".GlobalPreferences"."com.apple.mouse.scaling" = 10.0;  # fastest mouse tracking speed (uncapped; UI slider maxes at 3.0)
+    magicmouse.MouseButtonMode = "TwoButton";  # enable secondary (right) click
     dock.autohide = true;
     finder.FXPreferredViewStyle = "Nlsv";  # list view by default
     finder.CreateDesktop = false;          # clean desktop
