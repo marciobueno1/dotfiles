@@ -22,6 +22,7 @@
       _HIHideMenuBar = true;  # auto-hide the menu bar
       AppleShowAllExtensions = true;
     };
+    ".GlobalPreferences"."com.apple.mouse.scaling" = 10.0;  # fastest mouse tracking speed (uncapped; UI slider maxes at 3.0)
     dock.autohide = true;
     finder.FXPreferredViewStyle = "Nlsv";  # list view by default
     finder.CreateDesktop = false;          # clean desktop
