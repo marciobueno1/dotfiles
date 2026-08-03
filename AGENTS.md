@@ -4,7 +4,7 @@ Deliberate decisions in this repo - do NOT silently revert them:
 
 - `homebrew.onActivation.cleanup = "zap"` in `configuration.nix` is intentional. It forces the good habit of declaring every Homebrew package in the Nix config instead of installing things ad-hoc, which keeps the machine reproducible. Do not soften it to `uninstall` or `none`. Users are warned about its effect in README.md; this note is for anyone tempted to change the setting itself.
 - Never commit `.no-mistakes/` validation evidence to this public repo. `.no-mistakes/` is gitignored; if a validation pipeline stages evidence into a branch, drop it before merging.
-- Before adding a `system.defaults` key, verify the option path at https://mynixos.com/nix-darwin/options/system.defaults - don't assume it's under `NSGlobalDomain`.
+- Before adding a `system.defaults` key, verify the option path against the source in https://github.com/nix-darwin/nix-darwin/tree/master/modules/system/defaults (one file per domain, e.g. `magicmouse.nix`, `trackpad.nix`) - don't assume it's under `NSGlobalDomain`, and don't trust third-party option mirrors (e.g. mynixos.com) over this source.
 
 ## Maintaining this file
 
